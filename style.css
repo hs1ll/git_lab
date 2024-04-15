@@ -9,7 +9,7 @@ ol li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #table {
-    line-height:200%
+    line-height: 200%;
 }
 footer {
     padding-top: 3px;
@@ -25,4 +25,21 @@ a.foo:hover {
 a.foo {
   text-decoration-color: white;
   color: white;
+}
+
+#table table {
+    position: static;
+}
+
+#table table::after {
+    content : "";
+    background: url(git_logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 30%;
+    right: 5%;
+    max-width: 250px;
 }
