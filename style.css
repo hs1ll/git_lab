@@ -42,4 +42,20 @@ a.foo {
     top: 30%;
     right: 5%;
     max-width: 250px;
+    max-height: 250px;
+    animation-name: logoRotation;
+    transform: rotate(45deg);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes logoRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
